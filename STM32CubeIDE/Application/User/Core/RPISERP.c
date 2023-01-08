@@ -201,11 +201,11 @@ void USART2_IRQHandler(void)
     {
       if (rxSize == mRxData[2] + 4)   // if full packet was received
       {
-        // check checksum
-       // if(mRxData[rxSize - 1] == Checksum(mRxData, rxSize-1))
-       // {
+         //check checksum
+        if(mRxData[rxSize - 1] == Checksum(mRxData, rxSize-1))
+        {
           CB_Put(mReceiveFifo, &(mRxData[2]));
-      //  }
+        }
       }
     }
 

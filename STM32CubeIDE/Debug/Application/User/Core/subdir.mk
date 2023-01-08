@@ -7,14 +7,14 @@
 C_SRCS += \
 ../Application/User/Core/RPISERP.c \
 ../Application/User/Core/circbuf.c \
-C:/Martin/GIT/RPISERP_DEMO/Core/Src/dma.c \
-C:/Martin/GIT/RPISERP_DEMO/Core/Src/gpio.c \
-C:/Martin/GIT/RPISERP_DEMO/Core/Src/main.c \
-C:/Martin/GIT/RPISERP_DEMO/Core/Src/stm32l0xx_hal_msp.c \
-C:/Martin/GIT/RPISERP_DEMO/Core/Src/stm32l0xx_it.c \
+/home/martin/GIT/RPISERP_DEMO/Core/Src/dma.c \
+/home/martin/GIT/RPISERP_DEMO/Core/Src/gpio.c \
+/home/martin/GIT/RPISERP_DEMO/Core/Src/main.c \
+/home/martin/GIT/RPISERP_DEMO/Core/Src/stm32l0xx_hal_msp.c \
+/home/martin/GIT/RPISERP_DEMO/Core/Src/stm32l0xx_it.c \
 ../Application/User/Core/syscalls.c \
 ../Application/User/Core/sysmem.c \
-C:/Martin/GIT/RPISERP_DEMO/Core/Src/usart.c 
+/home/martin/GIT/RPISERP_DEMO/Core/Src/usart.c 
 
 OBJS += \
 ./Application/User/Core/RPISERP.o \
@@ -44,17 +44,17 @@ C_DEPS += \
 # Each subdirectory must supply rules for building sources it contributes
 Application/User/Core/%.o Application/User/Core/%.su: ../Application/User/Core/%.c Application/User/Core/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Application/User/Core/dma.o: C:/Martin/GIT/RPISERP_DEMO/Core/Src/dma.c Application/User/Core/subdir.mk
+Application/User/Core/dma.o: /home/martin/GIT/RPISERP_DEMO/Core/Src/dma.c Application/User/Core/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Application/User/Core/gpio.o: C:/Martin/GIT/RPISERP_DEMO/Core/Src/gpio.c Application/User/Core/subdir.mk
+Application/User/Core/gpio.o: /home/martin/GIT/RPISERP_DEMO/Core/Src/gpio.c Application/User/Core/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Application/User/Core/main.o: C:/Martin/GIT/RPISERP_DEMO/Core/Src/main.c Application/User/Core/subdir.mk
+Application/User/Core/main.o: /home/martin/GIT/RPISERP_DEMO/Core/Src/main.c Application/User/Core/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Application/User/Core/stm32l0xx_hal_msp.o: C:/Martin/GIT/RPISERP_DEMO/Core/Src/stm32l0xx_hal_msp.c Application/User/Core/subdir.mk
+Application/User/Core/stm32l0xx_hal_msp.o: /home/martin/GIT/RPISERP_DEMO/Core/Src/stm32l0xx_hal_msp.c Application/User/Core/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Application/User/Core/stm32l0xx_it.o: C:/Martin/GIT/RPISERP_DEMO/Core/Src/stm32l0xx_it.c Application/User/Core/subdir.mk
+Application/User/Core/stm32l0xx_it.o: /home/martin/GIT/RPISERP_DEMO/Core/Src/stm32l0xx_it.c Application/User/Core/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Application/User/Core/usart.o: C:/Martin/GIT/RPISERP_DEMO/Core/Src/usart.c Application/User/Core/subdir.mk
+Application/User/Core/usart.o: /home/martin/GIT/RPISERP_DEMO/Core/Src/usart.c Application/User/Core/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
 
 clean: clean-Application-2f-User-2f-Core

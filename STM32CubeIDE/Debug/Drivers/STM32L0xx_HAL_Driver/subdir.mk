@@ -5,24 +5,24 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c \
-C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c 
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c \
+/home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c 
 
 OBJS += \
 ./Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal.o \
@@ -66,41 +66,41 @@ C_DEPS += \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_cortex.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_cortex.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_dma.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_dma.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_exti.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_exti.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_flash.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_flash.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_flash_ex.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_flash_ex.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_flash_ramfunc.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_flash_ramfunc.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_gpio.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_gpio.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_i2c.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_i2c.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_i2c_ex.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_i2c_ex.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_pwr.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_pwr.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_pwr_ex.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_pwr_ex.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_rcc.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_rcc.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_rcc_ex.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_rcc_ex.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_tim.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_tim.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_tim_ex.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_tim_ex.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_uart.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_uart.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
-Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_uart_ex.o: C:/Martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
+Drivers/STM32L0xx_HAL_Driver/stm32l0xx_hal_uart_ex.o: /home/martin/GIT/RPISERP_DEMO/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c Drivers/STM32L0xx_HAL_Driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L011xx -c -I../../Core/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
 
 clean: clean-Drivers-2f-STM32L0xx_HAL_Driver

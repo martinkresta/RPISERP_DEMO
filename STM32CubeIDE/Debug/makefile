@@ -61,8 +61,8 @@ all: main-build
 main-build: RPISERP_DEMO_L011.elf secondary-outputs
 
 # Tool invocations
-RPISERP_DEMO_L011.elf RPISERP_DEMO_L011.map: $(OBJS) $(USER_OBJS) C:\Martin\GIT\RPISERP_DEMO\STM32CubeIDE\STM32L011K4TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "RPISERP_DEMO_L011.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Martin\GIT\RPISERP_DEMO\STM32CubeIDE\STM32L011K4TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RPISERP_DEMO_L011.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+RPISERP_DEMO_L011.elf RPISERP_DEMO_L011.map: $(OBJS) $(USER_OBJS) /home/martin/GIT/RPISERP_DEMO/STM32CubeIDE/STM32L011K4TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "RPISERP_DEMO_L011.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"/home/martin/GIT/RPISERP_DEMO/STM32CubeIDE/STM32L011K4TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RPISERP_DEMO_L011.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
