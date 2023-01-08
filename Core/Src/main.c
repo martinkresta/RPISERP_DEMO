@@ -73,6 +73,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+
   HAL_Init();
 
   /* USER CODE BEGIN Init */
@@ -107,10 +108,10 @@ int main(void)
 
   while (1)
   {
-    HAL_Delay(txPeriod_ms);
-    HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+   // HAL_Delay(txPeriod_ms);
+   // HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
 
-    RSP_Send(payload, 10);
+    //RSP_Send(payload, 10);
 
 
     // TBD move to scheduler
@@ -120,7 +121,18 @@ int main(void)
     {
       if(reclen > 2)
       {
-        txPeriod_ms = rxData[0] * 5;
+        HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+        if (rxData[0] == 0xAA)   // tx period setting
+        {
+          txPeriod_ms = rxData[1] * 1;
+        }
+        if (rxData[0] == 0xBB)  // loopback test
+        {
+          payload[2] = rxData[1];
+          payload[3] = rxData[2];
+          RSP_Send(payload, 10);
+        }
+
       }
 
     }
