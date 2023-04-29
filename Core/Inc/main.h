@@ -57,8 +57,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define AV_PWM_Pin GPIO_PIN_0
+#define AV_PWM_GPIO_Port GPIOA
 #define VCP_TX_Pin GPIO_PIN_2
 #define VCP_TX_GPIO_Port GPIOA
+#define AV1_Pin GPIO_PIN_3
+#define AV1_GPIO_Port GPIOA
+#define AV2_Pin GPIO_PIN_4
+#define AV2_GPIO_Port GPIOA
+#define AV3_Pin GPIO_PIN_5
+#define AV3_GPIO_Port GPIOA
+#define AV4_Pin GPIO_PIN_6
+#define AV4_GPIO_Port GPIOA
 #define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14
@@ -67,6 +77,10 @@ void Error_Handler(void);
 #define VCP_RX_GPIO_Port GPIOA
 #define LD3_Pin GPIO_PIN_3
 #define LD3_GPIO_Port GPIOB
+#define AV_ENC1_Pin GPIO_PIN_5
+#define AV_ENC1_GPIO_Port GPIOB
+#define AV_ENC2_Pin GPIO_PIN_7
+#define AV_ENC2_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

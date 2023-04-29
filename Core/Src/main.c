@@ -19,13 +19,16 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dma.h"
+#include "lptim.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
-#include "RPISERP.h"
+//#include "RPISERP.h"
+#include "AVC.h"
 
 /* USER CODE END Includes */
 
@@ -58,6 +61,8 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+uint8_t mDbgCmd;
+
 /* USER CODE END 0 */
 
 /**
@@ -73,7 +78,6 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-
   HAL_Init();
 
   /* USER CODE BEGIN Init */
@@ -91,6 +95,8 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_USART2_UART_Init();
+  MX_TIM2_Init();
+  MX_LPTIM1_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -98,44 +104,39 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  RSP_Init(&huart2, hdma_usart2_tx.Instance, hdma_usart2_rx.Instance);
+//  RSP_Init(&huart2, hdma_usart2_tx.Instance, hdma_usart2_rx.Instance);
 
-  uint8_t payload[] = {0xAB, 0xCD, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88};
-
-  uint8_t  rxData[20];
-  uint8_t reclen;
-  uint32_t txPeriod_ms = 1000;
+  AVC_Init();
 
   while (1)
   {
    // HAL_Delay(txPeriod_ms);
    // HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
 
-    //RSP_Send(payload, 10);
-
-
-    // TBD move to scheduler
-    RSP_TransmitFromFifo();
-
-    if(true == RSP_GetMessage(rxData, &reclen))
+    switch(mDbgCmd)
     {
-      if(reclen > 2)
-      {
-        HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-        if (rxData[0] == 0xAA)   // tx period setting
-        {
-          txPeriod_ms = rxData[1] * 1;
-        }
-        if (rxData[0] == 0xBB)  // loopback test
-        {
-          payload[2] = rxData[1];
-          payload[3] = rxData[2];
-          RSP_Send(payload, 10);
-        }
-
-      }
-
+      case 0:
+        // do nothing
+        break;
+      case 1:
+        AVC_RunOpen();
+        mDbgCmd  = 0;
+        break;
+      case 2:
+        AVC_RunClose();
+        mDbgCmd  = 0;
+        break;
+      case 3:
+        AVC_Stop();
+        mDbgCmd  = 0;
+        break;
+      default:
+        break;
     }
+
+
+
+
 
     /* USER CODE END WHILE */
 
@@ -186,8 +187,10 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART2;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART2|RCC_PERIPHCLK_LPTIM1;
   PeriphClkInit.Usart2ClockSelection = RCC_USART2CLKSOURCE_PCLK1;
+  PeriphClkInit.LptimClockSelection = RCC_LPTIM1CLKSOURCE_PCLK;
+
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
